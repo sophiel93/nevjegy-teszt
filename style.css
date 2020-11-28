@@ -1,5 +1,7 @@
 body {
-    background: tomato;
+    background: url(images/hegyek.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*szelesseg 500
@@ -13,7 +15,7 @@ belso eltartas oldal 75 és alsó 30
     width: 500px;
     margin: 170px auto 0px;
     padding: 130px 75px 30px;
-    background-color: lime;
+    background: linear-gradient(314deg, #949FCB 0%, #FFFCDC 100%) 0% 0% no-repeat padding-box;
     position: relative;
 
 }
