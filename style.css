@@ -11,8 +11,21 @@ belso eltartas oldal 75 és alsó 30
 .box {
     box-sizing: border-box;
     width: 500px;
-    margin: 170px auto 140px;
-    padding: 0px 75px 30px;
+    margin: 170px auto 0px;
+    padding: 130px 75px 30px;
     background-color: lime;
+    position: relative;
 
+}
+
+/*kép 75px feljebb
+pozíció absolute > dobozt is pozícionálni kell, hogy ahhoz képest legyen pozícionálva, mert különben a bodyhoz lesz*/
+
+.avatar {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    top: -75px;
 }
