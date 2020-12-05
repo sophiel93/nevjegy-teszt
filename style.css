@@ -2,6 +2,7 @@ body {
     background: url(images/hegyek.png);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 /*szelesseg 500
@@ -12,12 +13,16 @@ belso eltartas oldal 75 és alsó 30
 
 .box {
     box-sizing: border-box;
-    width: 500px;
+    max-width: 500px;
     margin: 170px auto 0px;
     padding: 130px 75px 30px;
     background: linear-gradient(314deg, #949FCB 0%, #FFFCDC 100%) 0% 0% no-repeat padding-box;
     position: relative;
+}
 
+.box-content {
+    max-width: 350px;
+    margin: 0 auto;
 }
 
 /*kép 75px feljebb
