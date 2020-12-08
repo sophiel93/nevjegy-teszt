@@ -19,7 +19,7 @@ belso eltartas oldal 75 és alsó 30
 .box {
     box-sizing: border-box;
     max-width: 500px;
-    margin: 170px auto 0px;
+    margin: 170px 0px;
     padding: 130px 30px 30px;
     background: linear-gradient(314deg, #949FCB 0%, #FFFCDC 100%) 0% 0% no-repeat padding-box;
     position: relative;
@@ -44,6 +44,12 @@ pozíció absolute > dobozt is pozícionálni kell, hogy ahhoz képest legyen po
 
 @media (min-width: 500px) {
     .box {
-        margin: 170px 0px
+        margin: 170px auto 0px
     }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
