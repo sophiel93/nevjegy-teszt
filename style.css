@@ -3,7 +3,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
 }
+
+/*border-box: különben hozzáadódna a 100vh magassághoz a padding és görgetődne az oldal*/
 
 /*szelesseg 500
 felso eltartas 170
@@ -15,7 +20,7 @@ belso eltartas oldal 75 és alsó 30
     box-sizing: border-box;
     max-width: 500px;
     margin: 170px auto 0px;
-    padding: 130px 75px 30px;
+    padding: 130px 30px 30px;
     background: linear-gradient(314deg, #949FCB 0%, #FFFCDC 100%) 0% 0% no-repeat padding-box;
     position: relative;
 }
@@ -35,4 +40,10 @@ pozíció absolute > dobozt is pozícionálni kell, hogy ahhoz képest legyen po
     right: 0;
     left: 0;
     top: -75px;
+}
+
+@media (min-width: 500px) {
+    .box {
+        margin: 170px 0px
+    }
 }
